@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head> 
+        <title>PetLife</title>
+        <link rel="icon" href="imagem/animal.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/cliente.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse bg-inverse">
+        </nav>
+
+        <div class="container" >
+            <div class="table-wrapper" id="tabelatroca">
+
+                <div class="table-title">
+                    <div class="row">
+                        <img src="imagem/logo7.png"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-12 col-lg-2">
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <div class="form-group"><input type="text" class="form-control" id="email" name = "endero" placeholder = "Email"/></div>
+                                <div class="form-group"><input type="password" class="form-control" id="senha" name = "endero" placeholder="Senha" /></div>
+                                <button type="submit" class="btn btn-info btn-block" name="enviar" onclick="logar()">Entrar</button>
+                                <div class="form-group"><a href="cadastro.html" >Cadastre-se</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel"><b>Alerta!</b></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div id="loginModal"><label>Senha e/ou Email incorreto!</label></div>
+                    </div>
+                    <div class="modal-footer" id="footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid bg-4 text-center">
+            <div class="container">
+                <span class="text-muted glyphicon glyphicon-copyright-mark">TODOS OS DIREITOS RESERVADOS<br>PetLife</span>
+            </div>
+        </footer>
+    </body>
+</html>

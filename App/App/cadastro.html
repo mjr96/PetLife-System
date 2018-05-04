@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Cadastro Cliente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/cliente.js"></script>
+
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+
+    <script type="text/javascript" src="js/masck.js"></script>
+
+
+
+
+    <style>
+        button {
+            float: right;
+        }
+        
+        .col-xs-6 {
+            margin: 2px;
+        }
+        
+        button {
+            float: right;
+            margin-left: 10px;
+        }
+        
+        table {
+            margin-top: 10px;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        
+        body {
+            margin: 0 0 60px;
+            /* altura do seu footer */
+        }
+        
+        .bg-4 {
+            background-color: #222;
+            color: #ffffff;
+            height: 50px;
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .desce {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    </nav>
+    <div class="container desce">
+        <div class="table-wrapper" id="tabelatroca">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Cadastrar</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" class="form-control cpf" id="cpf" name="especie" />
+                            </div>
+                            <div class="form-group">
+                                <label for="dN">Data de Nascimento:</label>
+                                <input type="text" class="form-control data" data-mask="00/00/0000" id="dN" name="especie" />
+                            </div>
+                            <div class="form-group">
+                                <label for="sexo">Sexo:</label>
+                                <div class="radio">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="radio" value="Masculino">Masculino</label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="radio" value="Feminino">Feminino</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" class="form-control" id="endereco" name="endero" />
+                            </div>
+                            <div class="form-group">
+                                <label for="bairro">Bairro:</label>
+                                <input type="text" class="form-control" id="bairro" name="endero" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cep">CEP:</label>
+                                <input type="text" class="form-control cep" id="cep" name="endero" />
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" class="form-control telefone" id="telefone" name="endero" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" class="form-control" id="email" name="endero" />
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha:</label>
+                                <input type="password" class="form-control" id="senha" name="endero" />
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+
+
+                                    <button type="submit" class="btn btn-info" id="direi" name="enviar" onclick="salvarCliente()">Salvar</button>
+
+                                    <a href="index.html">
+                                        <button type="button" class="btn btn-info add-new">
+                                            Cancelar
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <div class="container">
+            <span class="text-muted glyphicon glyphicon-copyright-mark">TODOS OS DIREITOS RESERVADOS<br>PetLife</span>
+        </div>
+    </footer>
+</body>
+
+</html>

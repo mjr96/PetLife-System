@@ -1,0 +1,169 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastrar</title>
+        <link rel="stylesheet" href="/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/calendario.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/medico.css">
+        <link rel="stylesheet" href="css/secretaria.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mask.js"></script>
+
+        <script type="text/javascript" src="js/masck.js"></script>
+
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+
+            });
+
+
+
+        </script>
+        <style>
+            .col-md-6{
+
+                margin: 10px;
+                text-align: center;
+
+            }
+
+            #datepicker{
+                text-align: center;
+                width: 90%;
+            }
+            button{
+                float: right;
+                margin-bottom: 10px;
+                margin: 3px;
+            }
+            table{
+                margin-top: 10px;
+
+
+            }
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                margin: 0 0 60px; 
+            }
+            .bg-4 {
+                background-color: #222;
+                color: #ffffff;
+                height: 50px;
+                bottom: 0;
+                width: 100%;
+                position: absolute;
+
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div id="throbber" style="display:none; min-height:120px;"></div>
+        <div id="noty-holder"></div>
+        <div id="wrapper">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse col-sm-3 col-md-2 ">
+                        <ul class="nav navbar-nav side-nav col-md-4">
+                            <li onclick="animal()">
+                                <a  href="#"><i class="glyphicon glyphicon-user"></i> Animal</a>
+                            </li>
+                            <li onclick="agendar()">
+                                <a href="#"><i class="glyphicon glyphicon-calendar"></i> Agendar</a>
+                            </li>
+
+                            <li onclick="desmarcar()">
+                                <a href="#"><i class="glyphicon glyphicon-calendar"></i> Desmarcar</a>
+                            </li>
+                            <li onclick="animal()">
+                                <a href="#"><i class="glyphicon glyphicon-user"></i> Dados Pessoais</a>
+                            </li>
+
+                            <li onclick="historico()">
+                                <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Históricos</a>
+                            </li>
+
+
+                            <li>
+                                <a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Sair</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9  col-md-10  main">
+                    <div class="table-wrapper" id="troca">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2>Agenda</h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="datepicker" onclick="d()"> </div>
+
+                                    </div>
+                                    <div class="col-sm-4" ><button type="submit" class=" btn btn-info" name="enviar" onclick="cancelar()">Voltar</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <div class="container">
+                <span class="text-muted glyphicon glyphicon-copyright-mark">TODOS OS DIREITOS RESERVADOS<br>PetLife</span>
+            </div>
+        </footer>
+    </body>
+</html>

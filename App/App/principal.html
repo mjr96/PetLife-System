@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>App Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/medico.css">
+
+
+        <script type="text/javascript" src="js/principal.js"></script>
+
+
+
+        <style>
+            .col-xs-6{
+                margin: 2px;
+
+            }
+            img{
+                width:100%;
+                text-align: center
+            }
+            .bg-4 {
+                background-color: #222;
+                color: #ffffff;
+                height: 50px;
+                bottom: 0;
+                width: 100%;
+                position: absolute;
+            }
+            .col-md-12{
+
+                margin-top: 50px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div id="throbber" style="display:none; min-height:120px;"></div>
+        <div id="noty-holder"></div>
+        <div id="wrapper">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse col-sm-3 col-md-2 ">
+                        <ul class="nav navbar-nav side-nav col-md-4">
+                            <li onclick="animal()">
+                                <a  href="#"><i class="glyphicon glyphicon-user"></i> Animal</a>
+                            </li>
+                            <li onclick="agendar()">
+                                <a href="#"><i class="glyphicon glyphicon-calendar"></i> Agendar</a>
+                            </li>
+
+                            <li onclick="desmarcar()">
+                                <a href="#"><i class="glyphicon glyphicon-calendar"></i> Desmarcar</a>
+                            </li>
+                            <li onclick="animal()">
+                                <a href="#"><i class="glyphicon glyphicon-user"></i> Dados Pessoais</a>
+                            </li>
+
+                            <li onclick="historico()">
+                                <a href="#"><i class="glyphicon glyphicon-list-alt"></i> Históricos</a>
+                            </li>
+
+
+                            <li>
+                                <a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Sair</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9  col-md-10  main">
+                    <div class="table-wrapper" id="tabelatroca">
+                        <div class="col-md-12">
+                            <button type="button" onclick="animal()" class="btn btn-danger btn-lg btn-block">Animal</button>
+                            <button type="button" onclick="agendar()" class="btn btn-primary btn-lg btn-block">Agendar</button>
+                            <button type="button" onclick="desmarcar()" class="btn btn-info btn-lg btn-block">Desmarcar</button>
+                            <button type="button" onclick="dados()" class="btn btn-success btn-lg btn-block ">Dados Pessoais</button>
+                            <button type="button" onclick="historico()" class="btn btn-warning btn-lg btn-block">Histórico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <div class="container">
+                <span class="text-muted glyphicon glyphicon-copyright-mark">TODOS OS DIREITOS RESERVADOS<br>PetLife</span>
+            </div>
+        </footer>
+    </body>
+</html>
